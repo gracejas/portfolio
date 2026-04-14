@@ -7,7 +7,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
               url('https://source.unsplash.com/1600x900/?technology');
@@ -15,21 +15,28 @@ body {
   background-position: center;
 }
 
-/* Skill Cards */
-.skill-card {
-  transition: transform 0.3s ease;
-}
-
-.skill-card:hover {
-  transform: translateY(-10px);
-}
-
-/* Project Cards */
+/* Cards */
 .project-card {
-  transition: transform 0.3s ease, box-shadow 0.3s;
+  border-radius: 12px;
+  transition: 0.3s;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .bg-light {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
 }
